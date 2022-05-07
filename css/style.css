@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+.clear{
+    clear:both;
+}
+
+            /*Header:  Logo e menu*/
+
+header{
+    width: 100%;
+    padding: 20px 2%;
+}
+.logo{
+    background-image: url('../imagens/logo.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    width: 100%;
+    max-width: 236px;
+    height: 40px;
+    margin-left: 50px;
+}
+nav.menu-desktop{
+    padding: 0.5%;
+}
+nav.menu-desktop ul{
+    float: right;
+}
+nav.menu-desktop ul li{
+    display:inline-block;
+}
+nav.menu-desktop ul li a{
+    margin-right: 35px;
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+}
+nav.menu-mobile{
+    float: right;
+    display: none;
+}
+
+            /* Mosaico */
+
+section.mosaico{
+    padding: 2%;
+}
+.mosaico-duplo{
+    float: left;
+    width: calc(100% / 6);
+}
+.mosaico-img {
+    padding-top: 100%;
+    width: 100%;
+    background-color: #ccc;
+    background-size: 100% 100%;
+    border: 5px solid white;
+}
+
+            /* serviços centrais */
+
+.servicos{
+    padding: 0 2%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+}
+section.servicos  .container-2{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -70px;
+}
+
+section.servicos .container-2 .servicos-box{
+    text-align: center;
+    color: white;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    background-image: url('../imagens/icone_dente.png');
+    background-size: 18px 18px;
+    background-position: center calc(100% - 10px);
+    background-repeat: no-repeat;
+}
+section.servicos .container-2 .servicos-box h2{
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+section.servicos .container-2 .servicos-box p{
+    font-size: 12px;
+    text-align: justify;
+    margin-top: 10px;
+}
+.servicos-box:nth-of-type(1){
+    background-color: #576975;
+    width: 30%;
+    padding: 50px 2%;
+}
+.servicos-box:nth-of-type(2){
+    background-color: #688293;
+    width: 40%;
+    padding: 80px 2%;
+}
+.servicos-box:nth-of-type(3){
+    background-color: #576975;
+    width: 30%;
+    padding: 50px 2%;
+}
+
+                /* Section perfil */
+
+section.perfil{
+    margin: 0 auto;
+    padding: 1%;
+    max-width: 1000px;
+}
+.perfil1 {
+    float: left;
+    width: 50%;
+    height: auto;
+}
+.perfil1 img{
+    width: 90%;
+}
+.perfil-text{
+    float: right;
+    text-align: center;
+    width: 50%;
+    padding: 2%;
+}
+.perfil-text p{
+    margin-top: 50px;
+    text-align: justify;
+}
+
+
+        /* RESPONSIVO */
+
+
+@media screen and (max-width: 768px){
+    nav.menu-desktop{
+        display: none;
+    }
+    nav.menu-mobile{
+        display: block;
+    }
+    .servicos{
+        flex-direction: column;
+    }
+    section.servicos  .container-2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+        /* serviços box */
+
+
+    section.servicos  .container-2{
+        max-width: 800px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 0px;
+    }    
+    .servicos-box:nth-of-type(1){
+        background-color: #576975;
+        max width: 200px;
+        width: 40%;
+        padding: 40px 2%;
+    }
+    .servicos-box:nth-of-type(2){
+        background-color: #688293;
+        max width: 200px;
+        width: 44%;
+        padding: 50px 2%;
+    }
+    .servicos-box:nth-of-type(3){
+        background-color: #576975;
+        max width: 200px;
+        width: 40%;
+        padding: 40px 2%;
+    }
+
+
+        /*SECTION PERFIL*/
+
+
+    section.perfil{
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 30px 3%;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .perfil1 {
+        width: 100%;
+        float: none;
+    }
+    .perfil-text{
+        padding: 0px;
+        margin-top: 40px;
+        width: 100%;
+        float: none;
+    }
+    .perfil-text h2{
+        font-size: 17px;
+    }
+    .perfil-text p{
+        margin-top: 14px;
+        font-size: 12px;
+    }
+    .perfil1 img{
+        display: flex;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+
+        /* RESPONSIVO MOBILE */
+
+
+@media screen and (max-width: 500px){
+
+        /* HEADER: LOGO E MENU */
+
+    .logo{
+        float: none;
+        width: 100%;
+        max-width: 236px;
+        height: 40px;
+        margin-left: 0px;
+        margin: 0 auto;
+    }
+
+
+        /* SERVIÇOS BOX */
+
+
+    .servicos-box:nth-of-type(1){
+        background-color: #576975;
+        max width: 200px;
+        width: 90%;
+        padding: 40px 2%;
+    }
+    .servicos-box:nth-of-type(2){
+        background-color: #688293;
+        max width: 200px;
+        width: 94%;
+        padding: 50px 2%;
+    }
+    .servicos-box:nth-of-type(3){
+        background-color: #576975;
+        max width: 200px;
+        width: 90%;
+        padding: 40px 2%;
+    }
+
+
+        /* SECTION PERFIL */
+
+
+section.perfil{
+    margin: 0 auto;
+    padding: 30px 3%;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.perfil1 {
+    width: 100%;
+    float: none;
+}
+.perfil-text{
+    margin-top: 20px;
+    width: 100%;
+    float: none;
+}
+.perfil-text p{
+    font-size: 12px;
+}
+.perfil1 img{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+}
+}
