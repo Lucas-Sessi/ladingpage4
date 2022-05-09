@@ -46,6 +46,11 @@ nav.menu-mobile{
     float: right;
     display: none;
 }
+nav.menu-mobile ul li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+}
 
             /* Mosaico */
 
@@ -481,14 +486,36 @@ footer .container-footer{
         /* HEADER: LOGO E MENU */
 
     .logo{
-        float: none;
+        background-image: url('../imagens/logo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        float: left;
         width: 100%;
-        max-width: 236px;
-        height: 40px;
+        max-width: 80%;
+        height: 20px;
         margin-left: 0px;
-        margin: 0 auto;
     }
-
+    .menu-mobile{
+        float: right;
+        width: 28px;
+        height: 28px;
+        background-image: url(../imagens/icone_dente.png);
+        background-size: 100% 100%;
+        cursor: pointer;
+        display: none;
+    }
+    nav.menu-mobile > ul{
+        z-index: 999;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: white;
+    }
+    nav.menu-mobile > ul > li{
+        padding: 10px 0;
+    }
 
         /* SERVIÇOS BOX */
 
