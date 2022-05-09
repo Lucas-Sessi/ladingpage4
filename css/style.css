@@ -105,7 +105,8 @@ section.servicos .container-2 .servicos-box p{
     width: 30%;
     padding: 50px 2%;
 }
-.servicos-box:nth-of-type(2){
+section.servicos .container-2 .servicos-box:nth-of-type(2){
+    background-image:none;
     background-color: #688293;
     width: 40%;
     padding: 80px 2%;
@@ -140,6 +141,222 @@ section.perfil{
 .perfil-text p{
     margin-top: 50px;
     text-align: justify;
+}
+
+        /* SEÇÃO DE VIDEOS */
+
+section.videos {
+    padding: 2%;
+}
+section.videos .videos-container{
+    border: 10px solid white;
+    float: left;
+    width: calc(100% /3);
+    height: 270px;
+    margin-top: 50px;
+}
+section.videos .videos-container > iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+        /* SEÇÃO DE TRATAMENTO */
+
+section.tratamento {
+    padding:2% 0;
+    margin-top: 50px;
+}
+section.tratamento .tratamento-container{
+    padding:0 8%;
+
+}
+section.tratamento .tratamento-container > h2 {
+    text-align: center;
+    color: #698293;
+    margin-bottom: 80px;
+    font-size: 18px;
+}
+.tratamento-container .tratamento-single {
+    width: calc(100% /3);
+    float: left;
+    text-align: center;
+    padding:10px 20px;
+}
+.tratamento-container .tratamento-single h2{
+    text-align: left;
+    font-size: 18px;
+    color: #737373;
+}
+.tratamento-container .tratamento-single p{
+    text-align: justify;
+    font-size: 13px;
+    margin-top: 5px;
+    color: #b4b4b4;
+    padding: 10x 0;
+}
+
+/* DEPOIMENTOS */
+
+section.depoimentos {
+    padding-top: 5%;
+    text-align: center;
+}
+section.depoimentos h2{
+    font-size: 18px;
+    color: #698293;
+}
+section.depoimentos .depoimentos-container{
+    max-width: 400px;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0 auto;
+}
+.depoimentos-single > quote {
+    color: #b4b4b4;
+    font-size: 15px;
+}
+.depoimentos-single .nome-depoimento {
+    padding: 25px 0;
+}
+.depoimentos-single .nome-depoimento img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    display:inline-block;
+    background-color: black;
+}
+.depoimentos-single .nome-depoimento span {
+    font-size: 13px;
+    color: #b4b4b4;
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+        /* SOCIAL */
+
+.social.container {
+    padding: 2%;
+}
+.social-container .instagram-chamada {
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color: #98a5ae;
+    padding: 40px 0;
+}
+.social-container .instagram-chamada p {
+    line-height: 19px;
+    font-size: 13px;
+    color: white;
+}
+.mosaico-container-social {
+    float: left;
+    width: 100%;
+}
+.mosaico-social {
+    float: left;
+    width: calc(100% /9);
+    padding-top: calc(100% /9);
+    border: 5px solid white;
+    background-color: blue;
+    color: gray;
+}
+.social-container .facebook-chamada {
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color: #576975;
+    padding: 40px 0;
+}
+.social-container .facebook-chamada p {
+    line-height: 19px;
+    font-size: 13px;
+    color: white;
+}
+
+        /* FORMULARIO */
+
+section.formulario{
+    padding: 60px 2%;
+}
+section.formulario > h2{
+    text-align: center;
+    color: #698293;
+    font-size: 18px;
+}
+section.formulario > form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px 1%;
+    margin-top: 10px;
+}
+.form-container {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.form-container span{
+    color: #b4b4b4;
+    font-size: 15px;
+}
+form .form-container input[type=text]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+    margin-top: 8px;
+}
+.w50 {
+    width: 50%;
+}
+.form-container textarea{
+    width: 100%;
+    height: 121px;
+    padding: 8px;
+    resize: none;
+    border: 1px solid #dadada;
+}
+.form-container input[type=submit] {
+    display: inline-block;
+    width: 90px;
+    height: 35px;
+    background-color: #688293 ;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+        /* FOOTER */
+footer{
+    background-color: #688293;
+    padding: 40px 2%;
+}
+footer .container-footer{
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1100px;
+}
+.footer-single {
+    float: left;
+    padding: 0 90px;
+    width: calc(100% / 3);
+}
+.footer-single h2{
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+}
+.footer-single p{
+    color: white;
+    font-size: 14px;
+    margin-top: 8px;
 }
 
 
@@ -229,6 +446,30 @@ section.perfil{
         margin: 0 auto;
         width: 90%;
     }
+        /* SEÇÃO DE VIDEOS */
+
+    section.videos .videos-container{
+        margin: 0 auto;
+        border: 10px solid white;
+        display: block;
+        float: none;
+        width: 60%;
+        height: 270px;
+    }
+    section.videos .videos-container:nth-of-type(1){
+        margin-top: 34px;
+    }
+
+    /* FOOTER */
+
+    footer{
+        text-align: center;
+    }
+    .footer-single{
+        float: none;
+        width: 100%;
+        margin-top: 55px;
+    }
 }
 
 
@@ -258,7 +499,7 @@ section.perfil{
         width: 90%;
         padding: 40px 2%;
     }
-    .servicos-box:nth-of-type(2){
+    section.servicos .container-2 .servicos-box:nth-of-type(2){
         background-color: #688293;
         max width: 200px;
         width: 94%;
@@ -302,4 +543,61 @@ section.perfil{
     margin: 0 auto;
     width: 90%;
 }
+
+        /* SEÇÃO DE VIDEOS */
+
+    section.videos .videos-container{
+        border: 10px solid white;
+        float: none;
+        width: 100%;
+        height: 220px;
+        }
+
+        /* SEÇÃO DE TRATAMENTOS */
+
+            section.tratamento {
+                padding: 10px 0;
+                margin-top: 34px;
+            }
+            section.tratamento .tratamento-container{
+                padding: 0 2%;
+            }
+            .tratamento-container .tratamento-single {
+                width: 70%;
+                margin: 0 auto;
+                float: none;
+                text-align: center;
+                padding: 2px;
+                margin-top: 50px;
+            }
+            .tratamento-container .tratamento-single h2{
+                text-align: center;
+                font-size: 15;
+            }
+            .tratamento-container .tratamento-single p{
+                text-align: justify;
+                font-size: 12px;
+                margin-top: 3px;
+            }
+            
+
+            /* DEPOIMENTOS */
+        
+        section.depoimentos {
+            padding: 2%;
+        }
+        section.depoimentos h2{
+            margin-top: 80px;
+        }
+
+            /* SOCIAL */
+
+    .mosaico-social {
+        width: calc(100% /3);
+        padding-top: calc(100% /3);
+    }
+    .mosaico-social:nth-of-type(1n+4) {
+        display: none;
+
+    }
 }
